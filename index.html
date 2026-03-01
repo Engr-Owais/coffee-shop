@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brew &amp; Bloom — Brewed to Perfection</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav class="navbar" id="navbar" aria-label="Main navigation">
+    <a href="#hero" class="nav-logo">Brew<span>&amp;</span>Bloom</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#features">Why Us</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===================== HERO SECTION ===================== -->
+  <section class="hero" id="hero" aria-label="Hero">
+    <!-- Parallax background layers -->
+    <div class="parallax-layer layer-bg" data-depth="0.1"></div>
+    <div class="parallax-layer layer-mid" data-depth="0.3"></div>
+
+    <!-- 3D Coffee Cup (CSS art) -->
+    <div class="hero-cup-wrapper" aria-hidden="true">
+      <div class="coffee-scene">
+        <div class="cup-body">
+          <div class="cup-liquid"></div>
+          <div class="cup-rim"></div>
+          <div class="cup-handle"></div>
+        </div>
+        <div class="saucer"></div>
+        <!-- Steam strands -->
+        <div class="steam steam-1"></div>
+        <div class="steam steam-2"></div>
+        <div class="steam steam-3"></div>
+      </div>
+    </div>
+
+    <!-- Hero text -->
+    <div class="hero-content" data-depth="0.5">
+      <p class="hero-tagline reveal-fade">Est. 2015 · Artisan Coffee</p>
+      <h1 class="hero-headline reveal-up">Brewed to<br /><em>Perfection</em></h1>
+      <p class="hero-sub reveal-up delay-1">From the highlands of Ethiopia to your cup — every sip tells a story of craftsmanship, passion, and pure coffee culture.</p>
+      <div class="hero-cta reveal-up delay-2">
+        <a href="#menu" class="btn btn-primary">Explore Menu</a>
+        <a href="#contact" class="btn btn-outline">Reserve a Table</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT SECTION ===================== -->
+  <section class="about section" id="about" aria-label="About us">
+    <div class="bean-bg" aria-hidden="true"></div>
+    <div class="container">
+      <div class="about-grid">
+        <!-- 3D floating card -->
+        <div class="about-card-wrap reveal-left">
+          <div class="about-card tilt-card">
+            <div class="about-card-inner">
+              <div class="about-badge">☕</div>
+              <h3>Since 2015</h3>
+              <p>Born in a tiny corner of the city, Brew &amp; Bloom grew from a single espresso machine and a dream into the neighbourhood's favourite gathering place.</p>
+              <ul class="about-stats">
+                <li><strong>12K+</strong><span>Happy Guests / Month</span></li>
+                <li><strong>30+</strong><span>Signature Blends</span></li>
+                <li><strong>8</strong><span>Locations</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Brand story text -->
+        <div class="about-text reveal-right">
+          <span class="section-label">Our Story</span>
+          <h2>More Than Just a Cup of Coffee</h2>
+          <p>We source single-origin beans directly from small farms across Ethiopia, Colombia, and Guatemala — building fair partnerships and ensuring every harvest is sustainable.</p>
+          <p>Our baristas are trained to the highest specialty-coffee standards, treating each drink as a small work of art. Pull up a chair, slow down, and stay a while.</p>
+          <a href="#menu" class="btn btn-primary">View Our Menu</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== MENU SECTION ===================== -->
+  <section class="menu section" id="menu" aria-label="Menu">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">What We Serve</span>
+        <h2>Our Menu</h2>
+        <p>Handcrafted drinks and freshly baked goods made with love every morning.</p>
+      </div>
+
+      <!-- Category tabs -->
+      <div class="menu-tabs reveal-up" role="tablist" aria-label="Menu categories">
+        <button class="tab-btn active" data-tab="hot" role="tab" aria-selected="true">Hot Drinks</button>
+        <button class="tab-btn" data-tab="cold" role="tab" aria-selected="false">Cold Drinks</button>
+        <button class="tab-btn" data-tab="pastries" role="tab" aria-selected="false">Pastries</button>
+      </div>
+
+      <!-- Hot Drinks -->
+      <div class="menu-grid tab-panel active" id="tab-hot" role="tabpanel">
+        <article class="menu-card tilt-card reveal-up">
+          <div class="menu-card-inner">
+            <div class="menu-img espresso-art" aria-label="Espresso illustration"></div>
+            <div class="menu-info">
+              <h3>Espresso</h3>
+              <p>Rich, bold, single-origin shot with a velvety crema.</p>
+              <span class="price">$3.50</span>
+            </div>
+          </div>
+        </article>
+        <article class="menu-card tilt-card reveal-up delay-1">
+          <div class="menu-card-inner">
+            <div class="menu-img cappuccino-art" aria-label="Cappuccino illustration"></div>
+            <div class="menu-info">
+              <h3>Cappuccino</h3>
+              <p>Equal parts espresso, steamed milk, and silky foam.</p>
+              <span class="price">$4.75</span>
+            </div>
+          </div>
+        </article>
+        <article class="menu-card tilt-card reveal-up delay-2">
+          <div class="menu-card-inner">
+            <div class="menu-img latte-art" aria-label="Latte illustration"></div>
+            <div class="menu-info">
+              <h3>Caramel Latte</h3>
+              <p>Smooth espresso with warm milk and house-made caramel drizzle.</p>
+              <span class="price">$5.25</span>
+            </div>
+          </div>
+        </article>
+        <article class="menu-card tilt-card reveal-up delay-3">
+          <div class="menu-card-inner">
+            <div class="menu-img mocha-art" aria-label="Mocha illustration"></div>
+            <div class="menu-info">
+              <h3>Dark Mocha</h3>
+              <p>Espresso meets rich Belgian dark chocolate and steamed milk.</p>
+              <span class="price">$5.50</span>
+            </div>
+          </div>
+        </article>
+        <article class="menu-card tilt-card reveal-up delay-1">
+          <div class="menu-card-inner">
+            <div class="menu-img flatwhite-art" aria-label="Flat White illustration"></div>
+            <div class="menu-info">
+              <h3>Flat White</h3>
+              <p>Double ristretto with velvety micro-foam — intense and smooth.</p>
+              <span class="price">$4.50</span>
+            </div>
+          </div>
+        </article>
+        <article class="menu-card tilt-card reveal-up delay-2">
+          <div class="menu-card-inner">
+            <div class="menu-img chai-art" aria-label="Chai Latte illustration"></div>
+            <div class="menu-info">
+              <h3>Masala Chai</h3>
+              <p>Spiced black tea with steamed oat milk and a cinnamon dusting.</p>
+              <span class="price">$4.25</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Cold Drinks -->
+      <div class="menu-grid tab-panel" id="tab-cold" role="tabpanel" hidden>
+        <article class="menu-card tilt-card reveal-up">
+          <div class="menu-card-inner">
+            <div class="menu-img coldbrew-art" aria-label="Cold Brew illustration"></div>
+            <div class="menu-info">
+              <h3>Cold Brew</h3>
+              <p>12-hour steeped beans, smooth and naturally sweet over ice.</p>
+              <span class="price">$5.00</span>
+            </div>
+          </div>
+        </article>
+        <article class="menu-card tilt-card reveal-up delay-1">
+          <div class="menu-card-inner">
+            <div class="menu-img icedlatte-art" aria-label="Iced Latte illustration"></div>
+            <div class="menu-info">
+              <h3>Iced Caramel Latte</h3>
+              <p>Chilled espresso with milk, ice, and golden caramel ribbons.</p>
+              <span class="price">$5.75</span>
+            </div>
+          </div>
+        </article>
+        <article class="menu-card tilt-card reveal-up delay-2">
+          <div class="menu-card-inner">
+            <div class="menu-img frappé-art" aria-label="Frappé illustration"></div>
+            <div class="menu-info">
+              <h3>Mocha Frappé</h3>
+              <p>Blended espresso, chocolate, and ice topped with whipped cream.</p>
+              <span class="price">$6.00</span>
+            </div>
+          </div>
+        </article>
+        <article class="menu-card tilt-card reveal-up delay-3">
+          <div class="menu-card-inner">
+            <div class="menu-img matcha-art" aria-label="Matcha Latte illustration"></div>
+            <div class="menu-info">
+              <h3>Iced Matcha Latte</h3>
+              <p>Ceremonial-grade matcha whisked with oat milk over ice.</p>
+              <span class="price">$5.50</span>
+            </div>
+          </div>
+        </article>
+        <article class="menu-card tilt-card reveal-up delay-1">
+          <div class="menu-card-inner">
+            <div class="menu-img nitro-art" aria-label="Nitro Cold Brew illustration"></div>
+            <div class="menu-info">
+              <h3>Nitro Cold Brew</h3>
+              <p>Nitrogen-infused cold brew — creamy, bold, no milk needed.</p>
+              <span class="price">$5.75</span>
+            </div>
+          </div>
+        </article>
+        <article class="menu-card tilt-card reveal-up delay-2">
+          <div class="menu-card-inner">
+            <div class="menu-img lemonade-art" aria-label="Coffee Lemonade illustration"></div>
+            <div class="menu-info">
+              <h3>Espresso Lemonade</h3>
+              <p>A refreshing fusion of bright lemon and bold cold espresso.</p>
+              <span class="price">$5.25</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Pastries -->
+      <div class="menu-grid tab-panel" id="tab-pastries" role="tabpanel" hidden>
+        <article class="menu-card tilt-card reveal-up">
+          <div class="menu-card-inner">
+            <div class="menu-img croissant-art" aria-label="Croissant illustration"></div>
+            <div class="menu-info">
+              <h3>Butter Croissant</h3>
+              <p>Freshly baked, 27-layer laminated pastry, golden and flaky.</p>
+              <span class="price">$3.75</span>
+            </div>
+          </div>
+        </article>
+        <article class="menu-card tilt-card reveal-up delay-1">
+          <div class="menu-card-inner">
+            <div class="menu-img muffin-art" aria-label="Blueberry Muffin illustration"></div>
+            <div class="menu-info">
+              <h3>Blueberry Muffin</h3>
+              <p>Moist, bursting with fresh blueberries and a crunchy sugar top.</p>
+              <span class="price">$3.50</span>
+            </div>
+          </div>
+        </article>
+        <article class="menu-card tilt-card reveal-up delay-2">
+          <div class="menu-card-inner">
+            <div class="menu-img cinnamon-art" aria-label="Cinnamon Roll illustration"></div>
+            <div class="menu-info">
+              <h3>Cinnamon Roll</h3>
+              <p>Warm, gooey, swirled with cinnamon and glazed with cream cheese icing.</p>
+              <span class="price">$4.25</span>
+            </div>
+          </div>
+        </article>
+        <article class="menu-card tilt-card reveal-up delay-3">
+          <div class="menu-card-inner">
+            <div class="menu-img brownie-art" aria-label="Fudge Brownie illustration"></div>
+            <div class="menu-info">
+              <h3>Fudge Brownie</h3>
+              <p>Dense, dark chocolate brownie with a crinkly top and fudgy centre.</p>
+              <span class="price">$3.75</span>
+            </div>
+          </div>
+        </article>
+        <article class="menu-card tilt-card reveal-up delay-1">
+          <div class="menu-card-inner">
+            <div class="menu-img scone-art" aria-label="Scone illustration"></div>
+            <div class="menu-info">
+              <h3>Cranberry Scone</h3>
+              <p>Buttery classic scone studded with tart cranberries, served warm.</p>
+              <span class="price">$3.25</span>
+            </div>
+          </div>
+        </article>
+        <article class="menu-card tilt-card reveal-up delay-2">
+          <div class="menu-card-inner">
+            <div class="menu-img almond-art" aria-label="Almond Tart illustration"></div>
+            <div class="menu-info">
+              <h3>Almond Tart</h3>
+              <p>Short-crust shell filled with silky frangipane and toasted almonds.</p>
+              <span class="price">$4.50</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== WHY US SECTION ===================== -->
+  <section class="features section" id="features" aria-label="Why choose us">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">Why Choose Us</span>
+        <h2>The Brew &amp; Bloom Difference</h2>
+        <p>Every decision we make is guided by our love for exceptional coffee and genuine hospitality.</p>
+      </div>
+      <div class="features-grid">
+        <!-- Flip cards -->
+        <div class="flip-card reveal-up" aria-label="Premium Beans feature">
+          <div class="flip-card-inner">
+            <div class="flip-front">
+              <div class="feature-icon">🌱</div>
+              <h3>Premium Beans</h3>
+              <p>Direct-trade, single-origin beans from award-winning farms.</p>
+            </div>
+            <div class="flip-back">
+              <p>We visit our farm partners in person, verifying quality and supporting fair wages at every harvest season.</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card reveal-up delay-1" aria-label="Expert Baristas feature">
+          <div class="flip-card-inner">
+            <div class="flip-front">
+              <div class="feature-icon">🏆</div>
+              <h3>Expert Baristas</h3>
+              <p>SCA-certified team with a passion for the perfect pour.</p>
+            </div>
+            <div class="flip-back">
+              <p>Our baristas train continuously and compete nationally — bringing competition-level craft to your morning cup.</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card reveal-up delay-2" aria-label="Cozy Atmosphere feature">
+          <div class="flip-card-inner">
+            <div class="flip-front">
+              <div class="feature-icon">🛋️</div>
+              <h3>Cozy Atmosphere</h3>
+              <p>Warm interiors designed for lingering, working, and connecting.</p>
+            </div>
+            <div class="flip-back">
+              <p>Think exposed brick, soft lighting, jazz on vinyl, and the constant hum of a community that feels like home.</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card reveal-up delay-3" aria-label="Fast Service feature">
+          <div class="flip-card-inner">
+            <div class="flip-front">
+              <div class="feature-icon">⚡</div>
+              <h3>Fast Service</h3>
+              <p>Your order, ready in under 3 minutes — quality at speed.</p>
+            </div>
+            <div class="flip-back">
+              <p>We have streamlined our workflow so you never wait long — without ever cutting corners on taste or presentation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GALLERY SECTION ===================== -->
+  <section class="gallery section" id="gallery" aria-label="Gallery">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">Atmosphere</span>
+        <h2>Inside Brew &amp; Bloom</h2>
+        <p>Soak in the ambience before you even step through the door.</p>
+      </div>
+    </div>
+
+    <!-- 3D Carousel -->
+    <div class="carousel-wrapper" aria-label="Coffee shop gallery carousel">
+      <div class="carousel-stage" id="carouselStage">
+        <div class="carousel-item" data-index="0">
+          <div class="gallery-card g-espresso">
+            <div class="gallery-overlay"><span>Morning Espresso</span></div>
+          </div>
+        </div>
+        <div class="carousel-item" data-index="1">
+          <div class="gallery-card g-interior">
+            <div class="gallery-overlay"><span>Our Interior</span></div>
+          </div>
+        </div>
+        <div class="carousel-item" data-index="2">
+          <div class="gallery-card g-barista">
+            <div class="gallery-overlay"><span>The Craft</span></div>
+          </div>
+        </div>
+        <div class="carousel-item" data-index="3">
+          <div class="gallery-card g-latte">
+            <div class="gallery-overlay"><span>Latte Art</span></div>
+          </div>
+        </div>
+        <div class="carousel-item" data-index="4">
+          <div class="gallery-card g-beans">
+            <div class="gallery-overlay"><span>Origin Beans</span></div>
+          </div>
+        </div>
+        <div class="carousel-item" data-index="5">
+          <div class="gallery-card g-pastry">
+            <div class="gallery-overlay"><span>Fresh Pastries</span></div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-btn carousel-prev" id="carouselPrev" aria-label="Previous slide">&#8249;</button>
+      <button class="carousel-btn carousel-next" id="carouselNext" aria-label="Next slide">&#8250;</button>
+      <div class="carousel-dots" id="carouselDots" aria-label="Carousel slide indicators"></div>
+    </div>
+  </section>
+
+  <!-- ===================== TESTIMONIALS SECTION ===================== -->
+  <section class="testimonials section" id="testimonials" aria-label="Testimonials">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">Kind Words</span>
+        <h2>What Our Guests Say</h2>
+      </div>
+      <div class="testimonial-slider" id="testimonialSlider" aria-live="polite">
+        <div class="testimonial-track" id="testimonialTrack">
+          <div class="testimonial-slide">
+            <div class="stars" aria-label="5 stars">★★★★★</div>
+            <blockquote>"The best flat white I've had outside Melbourne. Truly, I drive an extra 20 minutes just to start my day here."</blockquote>
+            <div class="reviewer">
+              <div class="avatar av1" aria-hidden="true"></div>
+              <div>
+                <strong>Sarah M.</strong>
+                <span>Regular Guest</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="stars" aria-label="5 stars">★★★★★</div>
+            <blockquote>"Incredible atmosphere, knowledgeable staff, and the cinnamon roll is life-changing. My office away from the office."</blockquote>
+            <div class="reviewer">
+              <div class="avatar av2" aria-hidden="true"></div>
+              <div>
+                <strong>James K.</strong>
+                <span>Freelance Designer</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="stars" aria-label="5 stars">★★★★★</div>
+            <blockquote>"Brew &amp; Bloom introduced me to specialty coffee. Now I can't go back. The Ethiopia single-origin is divine."</blockquote>
+            <div class="reviewer">
+              <div class="avatar av3" aria-hidden="true"></div>
+              <div>
+                <strong>Priya R.</strong>
+                <span>Coffee Enthusiast</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="stars" aria-label="5 stars">★★★★★</div>
+            <blockquote>"The cold brew is silky smooth and never bitter. I've been coming here every Saturday for two years straight."</blockquote>
+            <div class="reviewer">
+              <div class="avatar av4" aria-hidden="true"></div>
+              <div>
+                <strong>David L.</strong>
+                <span>Architect</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-controls">
+        <button class="t-btn t-prev" id="tPrev" aria-label="Previous review">&#8249;</button>
+        <div class="t-dots" id="tDots" aria-label="Review slide indicators"></div>
+        <button class="t-btn t-next" id="tNext" aria-label="Next review">&#8250;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT SECTION ===================== -->
+  <section class="contact section" id="contact" aria-label="Contact and location">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">Find Us</span>
+        <h2>Come Say Hello</h2>
+        <p>We'd love to see you in person — or you can reach us any time below.</p>
+      </div>
+      <div class="contact-grid">
+        <!-- Info + Map -->
+        <div class="contact-info reveal-left">
+          <div class="info-card">
+            <div class="info-icon">📍</div>
+            <div>
+              <h4>Location</h4>
+              <p>42 Roast Lane, Espresso Quarter<br />New York, NY 10001</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">📞</div>
+            <div>
+              <h4>Phone</h4>
+              <p><a href="tel:+12125550173">+1 (212) 555-0173</a></p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">✉️</div>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:hello@brewandbloom.com">hello@brewandbloom.com</a></p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">🕐</div>
+            <div>
+              <h4>Hours</h4>
+              <p>Mon–Fri: 7 am – 8 pm<br />Sat–Sun: 8 am – 9 pm</p>
+            </div>
+          </div>
+
+          <!-- Map placeholder -->
+          <div class="map-placeholder" aria-label="Map location placeholder">
+            <div class="map-pin" aria-hidden="true">📍</div>
+            <span>42 Roast Lane, New York</span>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form reveal-right" id="contactForm" novalidate aria-label="Contact form">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Jane Smith" required autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="jane@example.com" required autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Table reservation, inquiry…" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us how we can help…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-logo">Brew<span>&amp;</span>Bloom</a>
+          <p>Crafting exceptional coffee experiences since 2015. Every cup, a small masterpiece.</p>
+          <div class="social-links" aria-label="Social media links">
+            <a href="#" aria-label="Instagram" class="social-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="#" aria-label="Facebook" class="social-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="#" aria-label="Twitter / X" class="social-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <nav class="footer-nav" aria-label="Quick navigation">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#features">Why Us</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-hours">
+          <h4>Opening Hours</h4>
+          <ul>
+            <li><span>Monday – Friday</span><span>7:00 am – 8:00 pm</span></li>
+            <li><span>Saturday</span><span>8:00 am – 9:00 pm</span></li>
+            <li><span>Sunday</span><span>8:00 am – 9:00 pm</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Brew &amp; Bloom Coffee. All rights reserved.</p>
+        <p>Crafted with ☕ and <span aria-hidden="true">&#10084;&#65039;</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back-to-top button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
